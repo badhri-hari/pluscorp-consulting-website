@@ -211,6 +211,22 @@ nav,
   -webkit-backdrop-filter: blur(1px);
 }
 
+.cursor.clicking {
+  animation: clickAnimation 0.2s forwards;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .cursor-background {
   position: fixed;
   top: 0;

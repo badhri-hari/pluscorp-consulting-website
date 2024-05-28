@@ -1,31 +1,39 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Cursor() {
-  const [position, setPosition] = useState({ left: 0, top: 0 });
-
-  const handlePointerMove = (event) => {
-    setPosition({
-      left: event.clientX - 12.5,
-      top: event.clientY - 12.5,
-    });
-  };
+  const [clicking, setClicking] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    window.addEventListener("pointermove", handlePointerMove);
+    const moveCursor = (e: MouseEvent) => {
+      setPosition({ x: e.clientX, y: e.clientY });
+    };
+
+    const handleMouseDown = () => {
+      setClicking(true);
+    };
+
+    const handleMouseUp = () => {
+      setClicking(false);
+    };
+
+    window.addEventListener("mousemove", moveCursor);
+    window.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("mouseup", handleMouseUp);
+
     return () => {
-      window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener("mousemove", moveCursor);
+      window.removeEventListener("mousedown", handleMouseDown);
+      window.removeEventListener("mouseup", handleMouseUp);
     };
   }, []);
 
   return (
     <div
-      className="cursor"
-      style={{
-        left: `${position.left}px`,
-        top: `${position.top}px`,
-      }}
-    ></div>
+      className={`cursor ${clicking ? "clicking" : ""}`}
+      style={{ left: `${position.x}px`, top: `${position.y}px` }}
+    />
   );
 }
