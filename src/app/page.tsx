@@ -16,13 +16,25 @@ export default function Home() {
       </video>
       <Center textAlign="center" flex="1">
         <VStack>
-          <Heading as="h1" size="lg" fontWeight="normal" mb={4}>
+          <Heading
+            as="h1"
+            size="lg"
+            fontWeight="normal"
+            mb={4}
+            style={{ color: "white" }}
+          >
             Crafting Innovative and Efficient Business Solutions
           </Heading>
-          <Heading as="h1" size="4xl" fontWeight="bold" mb={6}>
+          <Heading
+            as="h1"
+            size="4xl"
+            fontWeight="bold"
+            mb={6}
+            style={{ color: "white" }}
+          >
             PLUSCORP CONSULTING IS READY TO TAKE YOU HIGHER
           </Heading>
-          <Text fontSize="lg" maxW="2xl" mx="auto">
+          <Text fontSize="lg" maxW="2xl" mx="auto" style={{ color: "white" }}>
             Pluscorp Consulting offers a{" "}
             <strong>wide and comprehensive suite of consulting services</strong>{" "}
             tailored for various industries. Our extensive tools and expertise
