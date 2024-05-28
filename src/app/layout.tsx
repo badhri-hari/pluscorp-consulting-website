@@ -1,10 +1,11 @@
 import { ReactNode } from "react";
-import { Providers } from "./providers";
-import { Center, VStack } from "@chakra-ui/react";
+import { Center, ChakraProvider, VStack } from "@chakra-ui/react";
+
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Cursor from "../components/Cursor";
 import Background from "../components/Background";
+
 import "../styles/stylesheet.css";
 
 type LayoutProps = {
@@ -29,7 +30,7 @@ export default function Layout({ children }: LayoutProps) {
         <VStack spacing={0} height="100vh">
           <Cursor />
           <div className="page-layout-container">
-            <Providers>{children}</Providers>
+            <ChakraProvider>{children}</ChakraProvider>
           </div>
           <div className="footer-container">
             <Footer />
