@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pluscorp Consulting Website
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This repository contains the code for the official website of Pluscorp Consulting, created as part of a high school internship project. The website serves as an informational and promotional platform for Pluscorp Consulting, showcasing their services, contact information, and more.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js:** For server-side rendering and building the React application.
+- **Chakra UI:** For layout components and styling.
+- **Prisma ORM:** For database management and interaction.
+- **SQLite3:** For tracking website visit counts.
+- **React Icons:** For including various icons used throughout the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run this project locally, follow these steps:
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/badhri-hari/pluscorp-consulting.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Navigate to the project directory:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   cd pluscorp-consulting
+   ```
 
-## Deploy on Vercel
+3. **Run "npm run dev".**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Navigate to "localhost:3000" in your preferred browser.**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+
+This project is intended to be a static website. To deploy it, you can use any web hosting service that supports static sites, such as GitHub Pages, Netlify, or Vercel.
+
+## Contributing
+
+As this project was created as part of an internship, contributions are not expected. However, if you are part of the Pluscorp Consulting web development team and would like to suggest improvements, feel free to fork the repository and create pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+For any inquiries related to this project, please contact:
+
+- **Badhri Hari:** badhrihari123@gmail.com
+- **Pluscorp Consulting:** support@plusconsulting.in
+
+## Acknowledgments
+
+- Special thanks to the Pluscorp Consulting team for their support.
