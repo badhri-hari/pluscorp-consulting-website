@@ -4,13 +4,7 @@ import { Heading, Text, Center, VStack } from "@chakra-ui/react";
 export default function Home() {
   return (
     <div className="page-container">
-      <video
-        autoPlay
-        muted
-        loop
-        className="background-video"
-        style={{ opacity: "0.5" }}
-      >
+      <video autoPlay muted loop className="background-video">
         <source src="/home-video.mp4" type="video/mp4" />
         Please update your browser.
       </video>

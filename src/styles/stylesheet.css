@@ -1,3 +1,13 @@
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 html {
   cursor: none;
 }
@@ -53,12 +63,12 @@ body {
   width: 100px;
   height: 100%;
   padding: 5px;
-  margin-left: 1.5vw;
+  margin-left: 15vw;
   margin-top: 2vh;
 }
 
 .nav-logo-red-background {
-  background-color: #f80100;
+  background: rgba(31, 1, 1, 0.9);
   border-radius: 15px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -87,18 +97,18 @@ nav,
   z-index: 2;
   position: relative;
   overflow: visible;
-  margin-right: 1.5vw;
+  margin-right: 15vw;
   margin-top: 2vh;
 }
 
 .nav-members {
-  background-color: #f80100;
+  background: rgba(31, 1, 1, 0.9);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 .glassmorphism-nav {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(56, 45, 45, 0.25);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
@@ -132,43 +142,36 @@ nav,
 .nav-links {
   text-decoration: none;
   font-size: large;
-  color: whitesmoke;
+  color: white;
   transition: scale 0.2s ease-in-out, transform 0.3s ease;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding: 10px 20px;
   white-space: nowrap;
   position: relative;
   cursor: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links:hover {
-  scale: 1.1;
-}
-
-.nav-links.active {
-  background-color: #800000;
-  border-radius: 15px;
-  padding: 10px 20px;
+  scale: 1.05;
+  background: rgba(56, 44, 44, 0.6);
+  border-radius: 5px;
   position: relative;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-links::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #800000;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease;
+  display: none;
 }
 
-.nav-links:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.nav-links.active {
+  background: rgba(211, 211, 211, 0.363);
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 .page-layout-container {
@@ -246,6 +249,7 @@ nav,
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  opacity: 0.4;
 }
 
 .about-section {
