@@ -1,11 +1,13 @@
-import defaultTheme from "tailwindcss/defaultTheme";
-
-import colors from "tailwindcss/colors";
 import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+import daisyui from "daisyui";
+const { nextui } = require("@nextui-org/react");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{ts,tsx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -14,9 +16,19 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backdropFilter: {
+        none: "none",
+        blur: "blur(15px)",
+      },
+      backgroundColor: {
+        glass: "rgba(255, 255, 255, 0.25)",
+      },
+      borderColor: {
+        glass: "rgba(255, 255, 255, 0.2)",
+      },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, nextui(), daisyui],
 };
 
 function addVariablesForColors({ addBase, theme }: any) {
