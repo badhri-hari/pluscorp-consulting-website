@@ -10,11 +10,11 @@ This repository contains the code for the official website of Pluscorp Consultin
 - **Chakra UI:** For layout components and styling.
 - **Prisma ORM:** For database management and interaction.
 - **SQLite3:** For tracking website visit counts.
-- **React Icons:** For including various icons used throughout the site.
+- **React Icons:** For the various social platforms' icons used throughout the site.
 
 ## Installation
 
-To run this project locally, follow these steps:
+Although this project is not meant to be run locally given its commercial purpose, you may follow these steps if you wish to do so:
 
 1. **Clone the repository:**
 
@@ -53,4 +53,4 @@ For any inquiries related to this project, please contact:
 
 ## Acknowledgments
 
-- Special thanks to the Pluscorp Consulting team for their support.
+- Special thanks to the Pluscorp Consulting team for their support through providing constructive feedback and suggestions.
