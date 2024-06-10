@@ -30,11 +30,7 @@ Although this project is not meant to be run locally given its commercial purpos
 
 3. **Run "npm run dev".**
 
-4. **Navigate to "localhost:3000" in your preferred browser.**
-
-## Usage
-
-This project is intended to be a static website. To deploy it, you can use any web hosting service that supports static sites, such as GitHub Pages, Netlify, or Vercel.
+4. **Navigate to "localhost:3000" in your preferred browser.**.
 
 ## Contributing
 
